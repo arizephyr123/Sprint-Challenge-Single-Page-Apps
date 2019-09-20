@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: With Client Side routing the enire page does not have to load when the user clicks around the site. Client side (in the user's browser) is more efficient and can be faster because the user does not have to wait for the server's content response. Client Side routing mimicking server-side routing but the experience will be more seamless for the user because there are no white flashes each time the server reloads the page.
 
 ## Project Set Up
 
