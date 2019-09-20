@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Button } from "reactstrap";
 
 import CharacterCard from "./CharacterCard";
+
 
 const CharacterList = props => {
   // TODO: Add useState to track data from useEffectconst [character, setCharacter] = useState([])
@@ -30,8 +32,9 @@ const CharacterList = props => {
       {character.map(character => (
         <div>
           <Link to={`/character/${character.id}`}>
-            <h2>{character.name}</h2>
-            {/* <CharacterCard/> */}
+            <Button>{character.name}
+            {/* <CharacterCard props={character}/> */}
+            </Button>
           </Link>
         </div>
       ))}
