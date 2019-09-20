@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 
 import CharacterCard from "./CharacterCard";
+import SearchForm from "./SearchForm";
 
 
 const CharacterList = props => {
@@ -28,6 +29,7 @@ const CharacterList = props => {
 
   return (
     <section className="character-list">
+      <SearchForm/>
       {" "}
       {character.map(character => (
         <div>
