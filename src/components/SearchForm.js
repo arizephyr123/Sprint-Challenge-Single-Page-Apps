@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Form, Field, withFormik } from "formik";
 import axios from "axios";
 
-import CharaterCard from "./CharacterCard"
+import CharacterCard from "./CharacterCard"
 
 //  function SearchForm(props) {
 //   const [filtered, setFiltered] = useState([]);
@@ -31,10 +31,10 @@ import CharaterCard from "./CharacterCard"
           <Field type="text" name="query" />
         </label>
         <button type="submit">Submit</button>
-      </Form>
+      {/* </Form>
       {filtered.map(obj => obj.name) if (str.includes(
-      {filtered.query}))<CharaterCard />}
-      ))
+      {filtered.query}))<CharacterCard />}
+      )) */}
     </section>
   );
 }

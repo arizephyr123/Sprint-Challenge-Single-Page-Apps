@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 
 import CharacterCard from "./CharacterCard";
-import SearchForm from "./SearchForm";
+// import SearchForm from "./SearchForm";
 
 
 const CharacterList = props => {
@@ -28,14 +28,14 @@ const CharacterList = props => {
   }, [props]);
 
   return (
-    <section className="character-list">
-      <SearchForm/>
+    <section className="character-list" >
+      {/* <SearchForm/> */}
       {" "}
       {character.map(character => (
-        <div>
+        <div key={character.id}>
           <Link to={`/character/${character.id}`}>
             <Button>{character.name}
-            {/* <CharacterCard props={character}/> */}
+            {/* <CharacterCard key={character.id} character={character}/> */}
             </Button>
           </Link>
         </div>
